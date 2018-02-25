@@ -52,18 +52,18 @@ with open(f'piece_base_{layer}mm.svg', 'w') as f:
         <g id="1" transform="translate({12 + 6 + 2}, 0) rotate(90)">
             <polygon points="
                  3,  2
-                 3,  0
-                 4,  0
+                 3,  0.1
+                 4,  0.1
                  4,  4
                  2,  6
                  1,  6
-                 1,  4
-                -1,  4
+                 1,  3.9
+                -1,  3.9
                 -1,  6
                 -2,  6
                 -4,  4
-                -4,  0
-                -3,  0
+                -4,  0.1
+                -3,  0.1
                 -3,  2
             "/>
         </g>
@@ -72,8 +72,8 @@ with open(f'piece_base_{layer}mm.svg', 'w') as f:
                  1,  4
                  1,  2
                  3,  2
-                 3,  0
-                 4,  0
+                 3,  0.1
+                 4,  0.1
                  4,  4
                  2,  6
                  1,  6
@@ -82,8 +82,8 @@ with open(f'piece_base_{layer}mm.svg', 'w') as f:
                 -1,  6
                 -2,  6
                 -4,  4
-                -4,  0
-                -3,  0
+                -4,  0.1
+                -3,  0.1
                 -3,  2
                 -1,  2
                 -1,  4
