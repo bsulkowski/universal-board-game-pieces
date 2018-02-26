@@ -8,7 +8,7 @@ base_stroke = 0.3
 with open(f'piece_base_{layer}mm.svg', 'w') as f:
     f.write(f'''\
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="{spacing * 3 :.0f}mm" height="{spacing :.0f}mm" viewBox="0 0 {spacing * 3 :.0f} {spacing :.0f}">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="{spacing * 3.5 :.0f}mm" height="{spacing :.0f}mm" viewBox="0 0 {spacing * 3.5 :.0f} {spacing :.0f}">
     <g fill="gray" stroke="black" stroke-width="{base_stroke / (layer / 2) :7.3f}" transform="translate(0, {spacing / 2 :.0f}) scale({layer / 2 :7.3f})">
         <g id="0" transform="translate(6, 0)">
             <polygon points="
@@ -51,9 +51,11 @@ with open(f'piece_base_{layer}mm.svg', 'w') as f:
         </g>
         <g id="1" transform="translate({12 + 6 + 2}, 0) rotate(90)">
             <polygon points="
-                 3,  2
-                 3,  0.1
-                 4,  0.1
+                 1.1,  2
+                 1.1,  0
+                 3,  0
+                 3, -1.9
+                 4, -1.9
                  4,  4
                  2,  6
                  1,  6
@@ -62,31 +64,33 @@ with open(f'piece_base_{layer}mm.svg', 'w') as f:
                 -1,  6
                 -2,  6
                 -4,  4
-                -4,  0.1
-                -3,  0.1
-                -3,  2
+                -4, -1.9
+                -3, -1.9
+                -3,  0
+                -1.1,  0
+                -1.1,  2
             "/>
         </g>
-        <g id="2" transform="translate({24 + 6 + 4}, 0) rotate(90)">
+        <g id="2" transform="translate({24 + 6 + 8}, 0) rotate(90)">
             <polygon points="
-                 1,  4
-                 1,  2
-                 3,  2
-                 3,  0.1
-                 4,  0.1
+                 1.1,  4
+                 1.1,  0
+                 3,  0
+                 3, -1.9
+                 4, -1.9
                  4,  4
                  2,  6
                  1,  6
-                 1, 12
-                -1, 12
+                 1, 14
+                -1, 14
                 -1,  6
                 -2,  6
                 -4,  4
-                -4,  0.1
-                -3,  0.1
-                -3,  2
-                -1,  2
-                -1,  4
+                -4, -1.9
+                -3, -1.9
+                -3,  0
+                -1.1,  0
+                -1.1,  4
             "/>
         </g>
     </g>
