@@ -1,7 +1,7 @@
 from math import *
 from functools import reduce
 
-version = "2.0"
+version = "2.1"
 layer = 5
 spacing = layer * 6
 base_stroke = 0.3
@@ -59,10 +59,10 @@ with open(f'piece_base_{layer}mm_v{version}.svg', 'w') as f:
                  4, -1.9
                  4,  4
                  2,  6
-                 1,  6
-                 1,  3.9
-                -1,  3.9
-                -1,  6
+                 1.1,  6
+                 1.1,  3.9
+                -1.1,  3.9
+                -1.1,  6
                 -2,  6
                 -4,  4
                 -4, -1.9
