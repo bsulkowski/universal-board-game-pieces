@@ -1,11 +1,12 @@
 from math import *
 from functools import reduce
 
+version = "2.0"
 layer = 5
 spacing = layer * 6
 base_stroke = 0.3
     
-with open(f'piece_base_{layer}mm.svg', 'w') as f:
+with open(f'piece_base_{layer}mm_v{version}.svg', 'w') as f:
     f.write(f'''\
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="{spacing * 3.5 :.0f}mm" height="{spacing :.0f}mm" viewBox="0 0 {spacing * 3.5 :.0f} {spacing :.0f}">

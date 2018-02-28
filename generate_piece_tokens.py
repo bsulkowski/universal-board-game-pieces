@@ -1,6 +1,7 @@
 from math import *
 from functools import reduce
 
+version = "1.1"
 layer = 5
 fi = layer * 4
 r = fi / 2
@@ -92,7 +93,7 @@ hole = '''<polygon fill="white" points="
                 ''') + f'''
             "/>'''
 
-with open(f'piece_tokens_{layer}mm.svg', 'w') as f:
+with open(f'piece_tokens_{layer}mm_v{version}.svg', 'w') as f:
     f.write(f'''\
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="{spacing * 6 :.0f}mm" height="{spacing :.0f}mm" viewBox="0 0 {spacing * 6 :.0f} {spacing :.0f}">
