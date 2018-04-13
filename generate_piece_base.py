@@ -1,7 +1,7 @@
 from math import *
 from functools import reduce
 
-version = "2.2"
+version = "2.3"
 layer = 5
 spacing = layer * 6
 base_stroke = 0.3
@@ -14,10 +14,10 @@ def mirror(points):
 
 fancy_edge = [
     (4,  0),
-    (3.5, 1),
-    (2.5, 1.5),
-    (2, 2.5),
-    (2, 3.5),
+    (3.75, 1),
+    (2.75, 2),
+    (2.25, 3),
+    (2.25, 4),
     (3, 5.5),
     (2,  6)
 ]
